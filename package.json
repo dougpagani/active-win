@@ -16,8 +16,8 @@
 	"scripts": {
 		"test": "xo && npm run build && ava && tsd",
 		"test-ci": "xo && tsd",
-		"build": "swift build --configuration=release && mv .build/release/active-win main",
-		"prepare": "npm run build"
+		"_build": "swift build --configuration=release && mv .build/release/active-win main",
+		"_prepare": "npm run build"
 	},
 	"files": [
 		"index.js",
